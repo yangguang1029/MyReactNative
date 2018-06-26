@@ -14,6 +14,9 @@
 RCT_EXPORT_MODULE()
 RCT_EXPORT_VIEW_PROPERTY(rowHeights, NSArray*)
 RCT_EXPORT_VIEW_PROPERTY(rowTypes, NSArray*)
+RCT_EXPORT_VIEW_PROPERTY(enablePullRefresh, BOOL)
+RCT_EXPORT_VIEW_PROPERTY(onPullRefresh, RCTDirectEventBlock);
+RCT_EXPORT_VIEW_PROPERTY(refreshing, BOOL)
 
 - (UIView *)view
 {
